@@ -43,7 +43,9 @@ class MainActivity : AppCompatActivity(), MainListAdapter.MainListListener {
                     DividerItemDecoration.VERTICAL
                 )
             )
-            adapter = MainListAdapter(sampleList, this@MainActivity)
+            adapter = MainListAdapter(this@MainActivity).apply {
+                submitList(sampleList)
+            }
         }
     }
 

@@ -10,7 +10,6 @@ import com.hoony.rxjava2sample.R
 import com.hoony.rxjava2sample.databinding.ItemMainBinding
 
 class MainListAdapter(
-    private val sampleList: List<Sample>,
     private val listener: MainListListener
 ) : ListAdapter<Sample, MainListAdapter.MainItemHolder>(
     object : DiffUtil.ItemCallback<Sample>() {
@@ -38,7 +37,7 @@ class MainListAdapter(
 
     override fun onBindViewHolder(holder: MainItemHolder, position: Int) {
         holder.apply {
-            bind(sampleList[position])
+            bind(getItem(position))
             setListener(listener)
         }
     }
