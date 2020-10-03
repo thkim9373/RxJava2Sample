@@ -11,31 +11,23 @@
         tools:context=".sample1.Sample1Activity">
 
         <EditText
-            android:id="@+id/inputId"
+            android:id="@+id/inputNumber"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="ID"
+            android:hint="Number"
+            android:inputType="numberDecimal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/inputPassword"
+        <TextView
+            android:id="@+id/multiplicationTable"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="Password"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputId" />
-
-        <Button
-            android:id="@+id/loginButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:textAllCaps="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/inputPassword" />
+            app:layout_constraintTop_toBottomOf="@id/inputNumber" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
