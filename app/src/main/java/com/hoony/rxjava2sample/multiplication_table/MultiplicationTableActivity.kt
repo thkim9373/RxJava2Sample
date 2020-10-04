@@ -1,16 +1,16 @@
-package com.hoony.rxjava2sample.sample1
+package com.hoony.rxjava2sample.multiplication_table
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.hoony.rxjava2sample.R
-import com.hoony.rxjava2sample.databinding.ActivityLoginBinding
+import com.hoony.rxjava2sample.databinding.ActivityMultiplicationTableBinding
 
-class Sample1Activity : AppCompatActivity() {
+class MultiplicationTableActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLoginBinding
-    private val viewModel by viewModels<Sample1ViewModel>()
+    private lateinit var binding: ActivityMultiplicationTableBinding
+    private val viewModel by viewModels<MultiplicationTableViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

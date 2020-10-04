@@ -8,15 +8,15 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.hoony.rxjava2sample.R
 import com.hoony.rxjava2sample.databinding.ActivityMainBinding
-import com.hoony.rxjava2sample.sample1.Sample1Activity
+import com.hoony.rxjava2sample.multiplication_table.MultiplicationTableActivity
 
 class MainActivity : AppCompatActivity(), MainListAdapter.MainListListener {
 
     private lateinit var binding: ActivityMainBinding
     private val sampleList = listOf(
         Sample(
-            "Sample 1",
-            Sample1Activity::class.java
+            "Multiplication Table",
+            MultiplicationTableActivity::class.java
         )
     )
 
